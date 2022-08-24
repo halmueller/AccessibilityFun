@@ -1,24 +1,591 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="029-Gl-nBx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Basic-->
+        <scene sceneID="Hb8-dA-RdF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="F6X-Wt-Td8" userLabel="Basic" customClass="ViewController" customModule="Accessibility_Fun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ERa-11-65T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8WC-zf-xRB">
+                                <rect key="frame" x="126" y="243" width="162.5" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is not editable" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huY-co-U2C">
+                                        <rect key="frame" x="17.5" y="0.0" width="127.5" height="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="OAU-2Q-f3J">
+                                        <rect key="frame" x="0.0" y="35" width="162.5" height="242"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="One California Street" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOo-pv-H5X">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Suite 2300" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-33-RBy">
+                                                <rect key="frame" x="0.0" y="52" width="162.5" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="San Francisco" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RFP-2B-QHZ">
+                                                <rect key="frame" x="0.0" y="104" width="162.5" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="California" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcE-NL-JA7">
+                                                <rect key="frame" x="0.0" y="156" width="162.5" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="94111" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cte-Bw-qQE">
+                                                <rect key="frame" x="0.0" y="208" width="162.5" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cte-Bw-qQE" firstAttribute="width" secondItem="aOo-pv-H5X" secondAttribute="width" id="38a-fM-h7P"/>
+                                            <constraint firstItem="EcE-NL-JA7" firstAttribute="width" secondItem="aOo-pv-H5X" secondAttribute="width" id="Jud-gw-dh2"/>
+                                            <constraint firstItem="RFP-2B-QHZ" firstAttribute="width" secondItem="aOo-pv-H5X" secondAttribute="width" id="jLz-Jk-ETH"/>
+                                            <constraint firstItem="ct0-33-RBy" firstAttribute="width" secondItem="aOo-pv-H5X" secondAttribute="width" id="mL4-WX-zCU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34:56 PM" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-Vs-R93">
+                                        <rect key="frame" x="38" y="295" width="86" height="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sx-Km-0u9">
+                                        <rect key="frame" x="50.5" y="330" width="61" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoW-Dv-s0Z">
+                                        <rect key="frame" x="46" y="379" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock elements with no accessibility settings applied" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4O-eq-zgG">
+                                <rect key="frame" x="20" y="44" width="374" height="171"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="cXN-rk-9Yr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vyg-Zm-zhb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R4O-eq-zgG" firstAttribute="leading" secondItem="ERa-11-65T" secondAttribute="leadingMargin" id="29F-ZZ-j6u"/>
+                            <constraint firstItem="R4O-eq-zgG" firstAttribute="top" secondItem="vyg-Zm-zhb" secondAttribute="top" id="BF8-c5-gqx"/>
+                            <constraint firstItem="8WC-zf-xRB" firstAttribute="centerY" secondItem="ERa-11-65T" secondAttribute="centerY" id="HE7-oT-TVi"/>
+                            <constraint firstItem="8WC-zf-xRB" firstAttribute="centerX" secondItem="ERa-11-65T" secondAttribute="centerX" id="Keo-7p-dDN"/>
+                            <constraint firstItem="R4O-eq-zgG" firstAttribute="centerX" secondItem="8WC-zf-xRB" secondAttribute="centerX" id="XBZ-UD-70J"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Simple" id="rJj-3L-diy"/>
+                    <connections>
+                        <outlet property="addressLineOne" destination="aOo-pv-H5X" id="EjL-be-cf5"/>
+                        <outlet property="addressLineTwo" destination="ct0-33-RBy" id="rS3-4E-luT"/>
+                        <outlet property="city" destination="RFP-2B-QHZ" id="peH-0s-55L"/>
+                        <outlet property="currentTime" destination="JY9-Vs-R93" id="IsO-va-jVS"/>
+                        <outlet property="state" destination="EcE-NL-JA7" id="rWF-XQ-9Hy"/>
+                        <outlet property="zipCode" destination="cte-Bw-qQE" id="5Vd-Y7-4Mo"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46U-Ot-bKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1221.7391304347827" y="-87.053571428571431"/>
+        </scene>
+        <!--Spiffy-->
+        <scene sceneID="99d-aT-rzf">
+            <objects>
+                <viewController id="axK-Za-BFe" customClass="SpiffyViewController" customModule="Accessibility_Fun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWb-kY-vYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-Xz-2zQ">
+                                <rect key="frame" x="126" y="243" width="162.5" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is not editable" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aj-OU-g24">
+                                        <rect key="frame" x="17.5" y="0.0" width="127.5" height="17"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="TXw-qw-1JB">
+                                        <rect key="frame" x="0.0" y="35" width="162.5" height="242"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="One California Street" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-gV-bhw">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="Address Line One"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Suite 2300" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAK-YC-Jj4">
+                                                <rect key="frame" x="0.0" y="52" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="Address Line Two"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="San Francisco" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-pQ-a54">
+                                                <rect key="frame" x="0.0" y="104" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="City"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="California" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-FO-p4d">
+                                                <rect key="frame" x="0.0" y="156" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="State"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="94111" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8z-ZE-pWv">
+                                                <rect key="frame" x="0.0" y="208" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="5 digit zip code"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Q8z-ZE-pWv" firstAttribute="width" secondItem="WmA-gV-bhw" secondAttribute="width" id="VRR-Zc-ENp"/>
+                                            <constraint firstItem="ZAK-YC-Jj4" firstAttribute="width" secondItem="WmA-gV-bhw" secondAttribute="width" id="gUO-eL-ZQd"/>
+                                            <constraint firstItem="cMa-FO-p4d" firstAttribute="width" secondItem="WmA-gV-bhw" secondAttribute="width" id="lNQ-sM-5f7"/>
+                                            <constraint firstItem="5Qj-pQ-a54" firstAttribute="width" secondItem="WmA-gV-bhw" secondAttribute="width" id="yJ6-3K-27e"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34:56 PM" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlP-ag-bSe">
+                                        <rect key="frame" x="38" y="295" width="86" height="17"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2j-0r-7cJ">
+                                        <rect key="frame" x="50.5" y="330" width="61" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Erase and start over"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-3V-mOA">
+                                        <rect key="frame" x="46" y="379" width="70" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Submit your updated address"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A few customizations for accessibility traits, labels, hints" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-8q-VdG">
+                                <rect key="frame" x="20" y="44" width="374" height="171"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="P9T-tf-ufn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0CZ-QH-KNy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2I-8q-VdG" firstAttribute="top" secondItem="0CZ-QH-KNy" secondAttribute="top" id="Rk9-k8-gTq"/>
+                            <constraint firstItem="W2I-8q-VdG" firstAttribute="leading" secondItem="tWb-kY-vYP" secondAttribute="leadingMargin" id="USM-QC-IF5"/>
+                            <constraint firstItem="CVR-Xz-2zQ" firstAttribute="centerY" secondItem="tWb-kY-vYP" secondAttribute="centerY" id="k0d-i5-rJk"/>
+                            <constraint firstItem="W2I-8q-VdG" firstAttribute="centerX" secondItem="CVR-Xz-2zQ" secondAttribute="centerX" id="oud-DT-Kxr"/>
+                            <constraint firstItem="CVR-Xz-2zQ" firstAttribute="centerX" secondItem="tWb-kY-vYP" secondAttribute="centerX" id="x1u-op-Im2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Spiffy" id="OkY-x3-czJ"/>
+                    <connections>
+                        <outlet property="addressLineOne" destination="WmA-gV-bhw" id="Ndv-St-8wc"/>
+                        <outlet property="addressLineTwo" destination="ZAK-YC-Jj4" id="I0r-ft-Uf1"/>
+                        <outlet property="city" destination="5Qj-pQ-a54" id="jkR-KX-pTL"/>
+                        <outlet property="currentTime" destination="vlP-ag-bSe" id="ziF-7J-eDK"/>
+                        <outlet property="state" destination="cMa-FO-p4d" id="Qgr-yH-nEZ"/>
+                        <outlet property="zipCode" destination="Q8z-ZE-pWv" id="8iB-Hi-nfK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0th-WK-Gj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075.36231884058" y="1.3392857142857142"/>
+        </scene>
+        <!--Manual order-->
+        <scene sceneID="1VJ-ny-wzi">
+            <objects>
+                <viewController id="9Yt-qo-4hA" customClass="RandomViewController" customModule="Accessibility_Fun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFg-6D-iHL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-rs-ei0">
+                                <rect key="frame" x="126" y="243" width="162.5" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is not editable" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El3-pu-bxA">
+                                        <rect key="frame" x="17.5" y="0.0" width="127.5" height="17"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Du7-cC-CjB">
+                                        <rect key="frame" x="0.0" y="35" width="162.5" height="242"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="One California Street" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yu6-UD-r4Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="Address Line One"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Suite 2300" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkU-AU-Q1f">
+                                                <rect key="frame" x="0.0" y="52" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="Address Line Two"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="San Francisco" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNM-hD-dUI">
+                                                <rect key="frame" x="0.0" y="104" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="City"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="California" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bws-5S-svR">
+                                                <rect key="frame" x="0.0" y="156" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="State"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="94111" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-4h-pWv">
+                                                <rect key="frame" x="0.0" y="208" width="162.5" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="5 digit zip code"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zkU-AU-Q1f" firstAttribute="width" secondItem="yu6-UD-r4Y" secondAttribute="width" id="A1w-Sz-bN9"/>
+                                            <constraint firstItem="CNM-hD-dUI" firstAttribute="width" secondItem="yu6-UD-r4Y" secondAttribute="width" id="URt-ck-FSd"/>
+                                            <constraint firstItem="bws-5S-svR" firstAttribute="width" secondItem="yu6-UD-r4Y" secondAttribute="width" id="XmR-qq-tcf"/>
+                                            <constraint firstItem="yeK-4h-pWv" firstAttribute="width" secondItem="yu6-UD-r4Y" secondAttribute="width" id="nTI-pM-tzU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34:56 PM" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eG-LU-jXW">
+                                        <rect key="frame" x="38" y="295" width="86" height="17"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxu-J8-GrO">
+                                        <rect key="frame" x="50.5" y="330" width="61" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Erase and start over"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMz-2u-JcI">
+                                        <rect key="frame" x="46" y="379" width="70" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Submit your updated address"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A few customizations for accessibility traits, labels, hints" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-Kw-CRR">
+                                <rect key="frame" x="20" y="44" width="374" height="171"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="st3-w6-sqw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vRg-6R-aRA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hX6-Kw-CRR" firstAttribute="leading" secondItem="bFg-6D-iHL" secondAttribute="leadingMargin" id="b1Z-r8-lQA"/>
+                            <constraint firstItem="hX6-Kw-CRR" firstAttribute="centerX" secondItem="qVg-rs-ei0" secondAttribute="centerX" id="dZU-Gi-spi"/>
+                            <constraint firstItem="hX6-Kw-CRR" firstAttribute="top" secondItem="vRg-6R-aRA" secondAttribute="top" id="dov-fg-MDE"/>
+                            <constraint firstItem="qVg-rs-ei0" firstAttribute="centerY" secondItem="bFg-6D-iHL" secondAttribute="centerY" id="ts7-er-ppr"/>
+                            <constraint firstItem="qVg-rs-ei0" firstAttribute="centerX" secondItem="bFg-6D-iHL" secondAttribute="centerX" id="w2U-Mm-iQ4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manual order" id="mjg-Ir-9uK" userLabel="Manual order"/>
+                    <connections>
+                        <outlet property="addressLineOne" destination="yu6-UD-r4Y" id="nxe-qZ-Lpt"/>
+                        <outlet property="addressLineTwo" destination="zkU-AU-Q1f" id="ASH-iG-KiP"/>
+                        <outlet property="city" destination="CNM-hD-dUI" id="DQQ-QU-sol"/>
+                        <outlet property="currentTime" destination="5eG-LU-jXW" id="3fk-ho-GG4"/>
+                        <outlet property="state" destination="bws-5S-svR" id="WZc-2X-scv"/>
+                        <outlet property="zipCode" destination="yeK-4h-pWv" id="om2-Pg-eGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIy-kD-SYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291" y="635"/>
+        </scene>
+        <!--Custom controls-->
+        <scene sceneID="eOR-or-Wqt">
+            <objects>
+                <viewController id="TOr-Nj-t2R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clD-4e-fZX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plain UIViews, simulating a custom control. Each has a different accessibility trait." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUU-UR-eYK">
+                                <rect key="frame" x="20" y="44" width="374" height="171"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="jn3-7I-F5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-o6-gwm">
+                                <rect key="frame" x="20" y="242" width="325" height="560"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CQp-Ol-1sM">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="560"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4m-MK-bPw">
+                                                <rect key="frame" x="24" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="Custom button">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Gx8-oa-yTu"/>
+                                                    <constraint firstAttribute="width" constant="80" id="qya-CY-XDL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-AN-4q6">
+                                                <rect key="frame" x="24" y="96" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="Image">
+                                                    <accessibilityTraits key="traits" image="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Dlx-Xv-Bcm"/>
+                                                    <constraint firstAttribute="width" constant="80" id="pzw-kj-3RH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grH-JE-Sid">
+                                                <rect key="frame" x="24" y="192" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="Static text">
+                                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Xwm-xY-6wt"/>
+                                                    <constraint firstAttribute="width" constant="80" id="cYc-zQ-Xcb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0B6-pv-q2b">
+                                                <rect key="frame" x="24" y="288" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" searchField="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="VXB-rt-InP"/>
+                                                    <constraint firstAttribute="width" constant="80" id="YZ0-eL-Usv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iv9-9n-xyb">
+                                                <rect key="frame" x="24" y="384" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" hint="plays a sound" label="custom thingie">
+                                                    <accessibilityTraits key="traits" playsSound="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="j80-TR-z07"/>
+                                                    <constraint firstAttribute="height" constant="80" id="klD-k3-2Ud"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kd-Ad-XI8">
+                                                <rect key="frame" x="24" y="480" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" hint="keyboard key" label="custom key">
+                                                    <accessibilityTraits key="traits" keyboardKey="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="EdR-XK-mHI"/>
+                                                    <constraint firstAttribute="width" constant="80" id="VfC-oW-Hbv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vDV-Cm-wTn">
+                                        <rect key="frame" x="197" y="0.0" width="128" height="560"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlD-bC-arX">
+                                                <rect key="frame" x="24" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="http link">
+                                                    <accessibilityTraits key="traits" link="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="WLg-RE-JxR"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Yu8-Er-uyt"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDX-zF-uVC">
+                                                <rect key="frame" x="24" y="96" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="frequently updated text">
+                                                    <accessibilityTraits key="traits" staticText="YES" updatesFrequently="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="H10-tE-E5w"/>
+                                                    <constraint firstAttribute="height" constant="80" id="VYK-vo-kiX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDI-Q2-m62">
+                                                <rect key="frame" x="24" y="192" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="adjustable frobisher">
+                                                    <accessibilityTraits key="traits" adjustable="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Rii-Oj-RAm"/>
+                                                    <constraint firstAttribute="height" constant="80" id="cQu-oP-QZY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-Q4-B3Z">
+                                                <rect key="frame" x="24" y="288" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="turn the page">
+                                                    <accessibilityTraits key="traits" causesPageTurn="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="ExN-s2-WrI"/>
+                                                    <constraint firstAttribute="width" constant="80" id="dHM-Up-ukh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-Ig-i6f">
+                                                <rect key="frame" x="24" y="384" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="custom button with a hyperlink, frequently updated">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES" updatesFrequently="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="XKj-aM-Os5"/>
+                                                    <constraint firstAttribute="width" constant="80" id="slN-Of-GZT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWI-ew-vYU">
+                                                <rect key="frame" x="24" y="480" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="custom header">
+                                                    <accessibilityTraits key="traits" header="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="OqX-xy-pnS"/>
+                                                    <constraint firstAttribute="height" constant="80" id="aeT-Ow-0v9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vDV-Cm-wTn" firstAttribute="leading" secondItem="dhS-o6-gwm" secondAttribute="leading" constant="197" id="7fC-Ui-quE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qz4-tK-D8J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhS-o6-gwm" firstAttribute="leading" secondItem="OUU-UR-eYK" secondAttribute="leading" id="5XL-mr-tBr"/>
+                            <constraint firstItem="OUU-UR-eYK" firstAttribute="top" secondItem="qz4-tK-D8J" secondAttribute="top" id="Alx-QM-V3j"/>
+                            <constraint firstItem="dhS-o6-gwm" firstAttribute="top" secondItem="OUU-UR-eYK" secondAttribute="bottom" constant="27" id="NUp-9Q-4LC"/>
+                            <constraint firstItem="OUU-UR-eYK" firstAttribute="leading" secondItem="clD-4e-fZX" secondAttribute="leadingMargin" id="VI5-qK-7hY"/>
+                            <constraint firstItem="qz4-tK-D8J" firstAttribute="trailing" secondItem="dhS-o6-gwm" secondAttribute="trailing" constant="69" id="VIn-fG-BBQ"/>
+                            <constraint firstItem="qz4-tK-D8J" firstAttribute="bottom" secondItem="dhS-o6-gwm" secondAttribute="bottom" constant="11" id="cbD-rg-M8H"/>
+                            <constraint firstItem="OUU-UR-eYK" firstAttribute="trailing" secondItem="clD-4e-fZX" secondAttribute="trailingMargin" id="oxk-qR-Tll"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom controls" id="eff-mt-D4R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEB-nS-rUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="197.54464285714286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="awB-Vm-ZnL">
+            <objects>
+                <tabBarController id="029-Gl-nBx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uqS-xV-vbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="F6X-Wt-Td8" kind="relationship" relationship="viewControllers" id="efT-9E-u9Z"/>
+                        <segue destination="axK-Za-BFe" kind="relationship" relationship="viewControllers" id="miO-KE-KFt"/>
+                        <segue destination="TOr-Nj-t2R" kind="relationship" relationship="viewControllers" id="NZc-Jx-Vfx"/>
+                        <segue destination="9Yt-qo-4hA" kind="relationship" relationship="viewControllers" id="YgV-mI-wUA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bq9-Gm-hnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="216"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

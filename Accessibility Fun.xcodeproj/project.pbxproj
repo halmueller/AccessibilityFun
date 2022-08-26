@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7A618528B852D1003E7ADA /* SpeechTricksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7A618428B852D1003E7ADA /* SpeechTricksViewController.swift */; };
 		2BAA401728B5DC3800B98167 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA401628B5DC3800B98167 /* RandomViewController.swift */; };
 		2BCA3C9228B5BC2700A2ECA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3C9128B5BC2700A2ECA6 /* AppDelegate.swift */; };
 		2BCA3C9428B5BC2700A2ECA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3C9328B5BC2700A2ECA6 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B7A618428B852D1003E7ADA /* SpeechTricksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTricksViewController.swift; sourceTree = "<group>"; };
 		2BAA401628B5DC3800B98167 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		2BCA3C8E28B5BC2700A2ECA6 /* Accessibility Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCA3C9128B5BC2700A2ECA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,8 +109,9 @@
 				2BCA3C9328B5BC2700A2ECA6 /* SceneDelegate.swift */,
 				2BCA3C9528B5BC2700A2ECA6 /* ViewController.swift */,
 				2BCA3CC128B5C92C00A2ECA6 /* SpiffyViewController.swift */,
-				2BCA3C9728B5BC2700A2ECA6 /* Main.storyboard */,
 				2BAA401628B5DC3800B98167 /* RandomViewController.swift */,
+				2BCA3C9728B5BC2700A2ECA6 /* Main.storyboard */,
+				2B7A618428B852D1003E7ADA /* SpeechTricksViewController.swift */,
 				2BCA3C9A28B5BC2800A2ECA6 /* Assets.xcassets */,
 				2BCA3C9C28B5BC2800A2ECA6 /* LaunchScreen.storyboard */,
 				2BCA3C9F28B5BC2800A2ECA6 /* Info.plist */,
@@ -268,6 +271,7 @@
 				2BCA3C9628B5BC2700A2ECA6 /* ViewController.swift in Sources */,
 				2BCA3CC228B5C92C00A2ECA6 /* SpiffyViewController.swift in Sources */,
 				2BCA3C9228B5BC2700A2ECA6 /* AppDelegate.swift in Sources */,
+				2B7A618528B852D1003E7ADA /* SpeechTricksViewController.swift in Sources */,
 				2BCA3C9428B5BC2700A2ECA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

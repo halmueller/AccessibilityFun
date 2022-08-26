@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var zipCode: UITextField!
     @IBOutlet weak var currentTime: UILabel!
     
+    @IBOutlet var inputFields: [UITextField]!
     var timer: Timer? = nil
     
     override func viewDidLoad() {
@@ -28,6 +29,10 @@ class ViewController: UIViewController {
             self.currentTime.text = dateFormatter.string(from: Date())
         }
         
+    }
+    @IBAction func resetForm(_ sender: Any) {
+        inputFields.forEach { $0.text = nil }
+        view.endEditing(true)
     }
 }
 

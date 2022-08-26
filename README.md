@@ -2,14 +2,16 @@
 
 Demo/sandbox app for Voiceover. Most of the interesting stuff is in `Main.storyboard`.
 
+![Simulator Screen Shot - iPhone 13 Pro - 2022-08-26 at 00 52 31](https://user-images.githubusercontent.com/418007/186851880-bd9b07d4-5fff-4c02-bd5c-6f011d218f5d.png)
+
 There are 5 scenes in the storyboard.
 
 The first 3 are all notional examples of an address entry form. None of the fields or controls actually do anything, except that the `Reset`
 button clears all fields and resets First Responder to nil.
-Tab names:
-Simple: what you'd get if you just drop text fields and labels onto the storyboard, without tweaking the accessibility settings.
-Spiffy: tweak some accessibility settings slightly. Low lift, big improvement.
-Random: set an arbitrary "swipe order" for voiceover.
+Tab names: 
+* Simple: what you'd get if you just drop text fields and labels onto the storyboard, without tweaking the accessibility settings.
+* Spiffy: tweak some accessibility settings slightly. Low lift, big improvement.
+* Random: set an arbitrary "swipe order" for voiceover.
 
 The fourth scene is an example of assigning Voiceover attributes/ARIA tags to plan old UIViews. Each teal square is just a `UIView`, with one or
 more Accessibility attributes set (command-option-4 in the Storyboard editor). This is the sort of thing you'd do if you've written a custom view

@@ -17,8 +17,8 @@ class SpeechTricksViewController: UIViewController {
     // 98107
     @IBOutlet weak var plainZipcode: UILabel!
     @IBOutlet weak var attrZipcode: UILabel!
-    @IBOutlet weak var plainDescription: UILabel!
-    @IBOutlet weak var attrDescription: UILabel!
+    @IBOutlet weak var plainBallard: UILabel!
+    @IBOutlet weak var attrBallard: UILabel!
     
     @IBOutlet weak var plainForecastle: UILabel!
     @IBOutlet weak var attrForecastle: UILabel!
@@ -31,21 +31,35 @@ class SpeechTricksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        plainMueller.text = "Mueller"
+        // https://en.wiktionary.org/wiki/Mueller
+        // https://en.wiktionary.org/wiki/Müller#Pronunciation
         attrMule.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "muler"])
         attrMull.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])
-        attrMiller.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "miller"])
+        attrMiller.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])
+        
+        plainZipcode.text = "98107"
+        let spelledZipcode = NSAttributedString(string: "98107", attributes: [.accessibilitySpeechSpellOut: true])
+        attrZipcode.attributedText = spelledZipcode
+        plainBallard.text = "The brewery district in Ballard (zip code 98107) has about 20 craft breweries."
+        let attrBallardText = NSMutableAttributedString(string: "The brewery district in Ballard (zip code ")
+        attrBallardText.append(spelledZipcode)
+        attrBallardText.append(NSAttributedString(string: ") has about 20 craft breweries."))
+        attrBallard.attributedText = attrBallardText
+        
+        plainForecastle.text = "Forecastle"
+        plainGunwale.text = "Gunwale"
+        plainTopsail.text = "Topsail"
+        plainTopgallant.text = "Topgallant"
+        attrForecastle.attributedText = NSAttributedString(string: "Forecastle",
+                                                           attributes: [.accessibilitySpeechIPANotation: "(ˈfoʊksəl"])
+        attrGunwale.attributedText = NSAttributedString(string: "Gunwale",
+                                                        attributes: [.accessibilitySpeechIPANotation: "ˈgʌnəl"])
+        attrTopsail.attributedText = NSAttributedString(string: "Topsail",
+                                                        attributes: [.accessibilitySpeechIPANotation: "ˈtɑpsəl"])
+        attrTopgallant.attributedText = NSAttributedString(string: "Topgallant",
+                                                           attributes: [.accessibilitySpeechIPANotation: "təˈgælənt"])
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

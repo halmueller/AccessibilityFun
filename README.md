@@ -12,7 +12,7 @@ The first 3 are all notional examples of an address entry form. None of the fiel
 button clears all fields and resets First Responder to nil.
 Tab names: 
 * Simple: what you'd get if you just drop text fields and labels onto the storyboard, without tweaking the accessibility settings.
-* Spiffy: tweak some accessibility settings slightly. Low lift, big improvement.
+* Spiffy: tweak some accessibility settings slightly. Low lift, big improvement. Note "hints", the digit by digit zipcode (if you enter text), and the "updates frequently" setting for the time-of-day field.
 * Random: set an arbitrary "swipe order" for voiceover.
 
 The fourth scene is an example of assigning Voiceover attributes/ARIA tags to plan old UIViews. Each teal square is just a `UIView`, with one or

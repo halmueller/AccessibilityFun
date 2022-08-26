@@ -35,7 +35,7 @@ class SpeechTricksViewController: UIViewController {
         plainMueller.text = "Mueller"
         // https://en.wiktionary.org/wiki/Müller#Pronunciation /ˈmʏlɐ/
         // https://en.wiktionary.org/wiki/Mueller /ˈmʌlɚ/, /ˈmjuːlɚ/ (depending on the namebearer's preference)
-        (Received Pronunciation) IPA(key): /ˈmʌlə/, /ˈmjuːlə/ (depending on the namebearer's preference)
+        //         (Received Pronunciation) IPA(key): /ˈmʌlə/, /ˈmjuːlə/ (depending on the namebearer's preference)
         attrMule.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "muler"])
         attrMull.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])
         attrMiller.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])

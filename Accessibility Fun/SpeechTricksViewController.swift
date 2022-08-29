@@ -12,8 +12,9 @@ class SpeechTricksViewController: UIViewController {
     @IBOutlet weak var plainMueller: UILabel!
     @IBOutlet weak var attrMiller: UILabel!
     @IBOutlet weak var attrMule: UILabel!
-    @IBOutlet weak var attrMull: UILabel!
-    
+    @IBOutlet weak var attrMull1: UILabel!
+    @IBOutlet weak var attrMull2: UILabel!
+
     // 98107
     @IBOutlet weak var plainZipcode: UILabel!
     @IBOutlet weak var attrZipcode: UILabel!
@@ -32,14 +33,17 @@ class SpeechTricksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        plainMueller.text = "Mueller"
+        // I'm less than impressed with the results of these IPA pronunciations. Improvements welcome.
+        
+        plainMueller.text = "Miller"
         // https://en.wiktionary.org/wiki/Müller#Pronunciation /ˈmʏlɐ/
         // https://en.wiktionary.org/wiki/Mueller /ˈmʌlɚ/, /ˈmjuːlɚ/ (depending on the namebearer's preference)
-        //         (Received Pronunciation) IPA(key): /ˈmʌlə/, /ˈmjuːlə/ (depending on the namebearer's preference)
-        attrMule.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "muler"])
-        attrMull.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])
-        attrMiller.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmlər"])
-        
+        //         (Received Pronunciation) IPA(key): /ˈmʌlə/, /ˈmjuːlə/ (depending on the namebearer's preference) ˈmɪlɚ (/ˈmʌlər/
+        attrMiller.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˌmilər"]) // miller. Also try ˌmilər.
+        attrMule.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "muler"]) // mule-r
+        attrMull1.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmələr"]) // muller
+        attrMull2.attributedText = NSAttributedString(string: "Mueller", attributes: [.accessibilitySpeechIPANotation: "ˈmʌlər"]) // muller
+
         plainZipcode.text = "98107"
         let spelledZipcode = NSAttributedString(string: "98107", attributes: [.accessibilitySpeechSpellOut: true])
         attrZipcode.attributedText = spelledZipcode
@@ -53,14 +57,16 @@ class SpeechTricksViewController: UIViewController {
         plainGunwale.text = "Gunwale"
         plainTopsail.text = "Topsail"
         plainTopgallant.text = "Topgallant"
+//        attrForecastle.attributedText = NSAttributedString(string: "Forecastle",
+//                                                           attributes: [.accessibilitySpeechIPANotation: "(ˈfoʊksəl"])
         attrForecastle.attributedText = NSAttributedString(string: "Forecastle",
-                                                           attributes: [.accessibilitySpeechIPANotation: "(ˈfoʊksəl"])
+                                                           attributes: [.accessibilitySpeechIPANotation: "(ˈ ˈfōks(ə)l"])
         attrGunwale.attributedText = NSAttributedString(string: "Gunwale",
                                                         attributes: [.accessibilitySpeechIPANotation: "ˈgʌnəl"])
         attrTopsail.attributedText = NSAttributedString(string: "Topsail",
                                                         attributes: [.accessibilitySpeechIPANotation: "ˈtɑpsəl"])
         attrTopgallant.attributedText = NSAttributedString(string: "Topgallant",
-                                                           attributes: [.accessibilitySpeechIPANotation: "təˈgælənt"])
+                                                           attributes: [.accessibilitySpeechIPANotation: "təˈgalənt"])
     }
 
 }

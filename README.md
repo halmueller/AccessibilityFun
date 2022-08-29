@@ -25,8 +25,8 @@ to make "live" rhyme with either "five" or "give". The upper portion of that scr
 shows some nautical terms that aren't pronounced the way they look. The view controller source code for this scene is worth a look. 
 `.accessibilitySpeechSpellOut` is an attribute you'd add if you want a number (or word) 
 spoken character by character: "nine eight one zero seven"
-for a zipcode instead of "ninety-eight thousand one hundred seven".
+for a zipcode instead of "ninety-eight thousand one hundred seven". Many of the IPAs in this scene produce off-target or odd results.
 
 In all cases, red text has its Accessible Element tag set to false. It will not be rendered by a Braille display nor spoken by a screenreader.
 
-One more time: look at the storyboard, because that's where the interesting stuff sits.
+One more time: look at the storyboard, because that's where most of the interesting stuff sits.

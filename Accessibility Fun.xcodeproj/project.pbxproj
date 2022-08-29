@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B50F5A928BC58CA004FA968 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B50F5A828BC58CA004FA968 /* README.md */; };
 		2B7A618528B852D1003E7ADA /* SpeechTricksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7A618428B852D1003E7ADA /* SpeechTricksViewController.swift */; };
 		2BAA401728B5DC3800B98167 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA401628B5DC3800B98167 /* RandomViewController.swift */; };
 		2BCA3C9228B5BC2700A2ECA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3C9128B5BC2700A2ECA6 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B50F5A828BC58CA004FA968 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2B7A618428B852D1003E7ADA /* SpeechTricksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTricksViewController.swift; sourceTree = "<group>"; };
 		2BAA401628B5DC3800B98167 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		2BCA3C8E28B5BC2700A2ECA6 /* Accessibility Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 		2BCA3C8528B5BC2700A2ECA6 = {
 			isa = PBXGroup;
 			children = (
+				2B50F5A828BC58CA004FA968 /* README.md */,
 				2BCA3C9028B5BC2700A2ECA6 /* Accessibility Fun */,
 				2BCA3CA728B5BC2800A2ECA6 /* Accessibility FunTests */,
 				2BCA3CB128B5BC2800A2ECA6 /* Accessibility FunUITests */,
@@ -242,6 +245,7 @@
 			files = (
 				2BCA3C9E28B5BC2800A2ECA6 /* LaunchScreen.storyboard in Resources */,
 				2BCA3C9B28B5BC2800A2ECA6 /* Assets.xcassets in Resources */,
+				2B50F5A928BC58CA004FA968 /* README.md in Resources */,
 				2BCA3C9928B5BC2700A2ECA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,7 +4,7 @@ Demo/sandbox app for Voiceover. Most of the interesting stuff is in `Main.storyb
 
 How to use? Build and run, and then turn on Voiceover.
 
-![Simulator Screen Shot - iPhone 13 Pro - 2022-08-26 at 00 52 31](https://user-images.githubusercontent.com/418007/186851880-bd9b07d4-5fff-4c02-bd5c-6f011d218f5d.png)
+![Simulator Screen Shot - iPhone 13 Pro - 2022-08-26 at 00 52 31](./doc/images/186851880-bd9b07d4-5fff-4c02-bd5c-6f011d218f5d.png)
 
 There are 5 scenes in the storyboard.
 
